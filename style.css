@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 12px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    background-color: rgb(26, 26, 26);
+}
+
+.container{
+    width: 90%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo{
+    text-align: center;
+    font-size: 4rem;
+    color: lightgray;
+    margin-bottom: 30px;
+}
+
+form{
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+
+form input {
+    width: 90%;
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    display: inline-block;
+}
+
+form i {
+    text-align: center;
+    width: 9%;
+    font-size: 2rem;
+    margin: -8px;
+    color: darkgray;
+}
+
+.search-result{
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-gap: 25px;
+    grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.single-item{
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgb(36, 36, 36);
+    padding: 15px;
+    overflow: hidden;
+}
+
+.single-item img{
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+}
+
+.single-item .recipe-description{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.single-item .title{
+    color: lightgray;
+    margin: 20px 10px 0 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.view-btn{
+    text-decoration: none;
+    text-align: center;
+    width: 130px;
+    background-color: darkgray;
+    border-radius: 4px;
+    color: dimgray;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
+.view-btn:hover{
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.more-description{
+    color: lightgray;
+    display: block;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    letter-spacing: .05rem;
+    line-height: 2rem;
+}
